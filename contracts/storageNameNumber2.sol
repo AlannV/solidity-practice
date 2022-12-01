@@ -31,7 +31,6 @@ contract SimpleStorage {
         return storedNumber;
     }
 
-    // memory is used to especify the 
     function addPerson(string memory _name, uint256 _storedNumber) public {
         people.push(People(_storedNumber, _name));
     }
