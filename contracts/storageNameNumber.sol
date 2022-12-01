@@ -4,11 +4,14 @@ pragma solidity ^0.8.8;
 contract SimpleStorage {
 
     uint256 public storedNumber;
+    
+    // creating a new instance of People
     People public person = People({
         storedNumber: 2,
         name: "Alan"
         });
 
+    // define a People constructor
     struct People {
         uint256 storedNumber;
         string name;
